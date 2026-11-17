@@ -10,8 +10,7 @@ Tek sayfalık statik site. Derleme adımı yok: `index.html` + `assets/`.
 `index.html`'i tarayıcıda açın (dosya olarak açılır, sunucu gerekmez).
 
 ## Yayın (GitHub Pages)
-Depoyu GitHub'a gönderin → Settings → Pages → Branch: `main`, klasör `/ (root)`. Alan adı için kök dizine `CNAME` dosyası (`nuvedijital.com`) ekleyin.
+Depoyu GitHub'a gönderin → Settings → Pages → Branch: `main`, klasör `/ (root)`. Alan adı `nuvedigital.com` (kökteki `CNAME` dosyası). Alan adı Squarespace'te, e-posta Google Workspace'te.
 
 ## Yer tutucular
-- E-posta `merhaba@nuvedijital.com` ve Instagram `@nuvedijital` (`index.html`, iletişim bölümü).
 - Kurucu fotoğrafı: `assets/img/oguzhan.jpg` koyup `index.html`'deki yorum satırını açın; kemer biçimli çerçeveye oturur.
