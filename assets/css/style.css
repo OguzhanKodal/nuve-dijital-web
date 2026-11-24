@@ -304,6 +304,7 @@ section { position: relative; }
 .proj-media-shot { background: #16181d; padding: 6% 6% 0; }
 .proj-media-shot img { object-fit: cover; object-position: top left; border-radius: 10px 10px 0 0; }
 .proj-media-panel { background: var(--murekkep); display: grid; place-items: center; padding-top: 7%; }
+.proj-media-krem { background: #efe3cf; }
 .proj-media-panel img { width: 46%; height: auto; object-fit: contain; border-radius: 14px 14px 0 0; align-self: end; }
 .proj-body { padding: clamp(18px, 2vw, 28px); display: flex; flex-direction: column; gap: 14px; flex: 1; }
 .proj-top { display: flex; align-items: center; gap: 12px; }
