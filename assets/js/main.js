@@ -1,5 +1,5 @@
 /* Nüve Dijital — hareket katmanı (GSAP + ScrollTrigger + Lenis) */
-(() => {
+const nuveMain = () => {
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const root = document.documentElement;
@@ -114,6 +114,7 @@
 
   /* ---------- Hero: kemerin içinden geçiş ---------- */
   const hero = $('.hero');
+  const heroHost = hero.parentElement.tagName === 'CANVAS' ? hero.parentElement : hero;
   const archWrap = $('.hero-arch-wrap');
   function zoomScale() {
     const h = hero.getBoundingClientRect();
@@ -125,7 +126,7 @@
     return Math.max(py / (8 * u), (vh - py) / (10 * u), px / (16 * u), (vw - px) / (16 * u)) * 1.15;
   }
   const heroTl = gsap.timeline({
-    scrollTrigger: { trigger: hero, start: 'top top', end: '+=110%', pin: true, scrub: .6, invalidateOnRefresh: true }
+    scrollTrigger: { trigger: heroHost, start: 'top top', end: '+=110%', pin: heroHost, scrub: .6, invalidateOnRefresh: true }
   });
   heroTl
     .to('.hero-inner', { yPercent: -18, opacity: 0, ease: 'power2.in', duration: .45 }, 0)
@@ -317,4 +318,5 @@
       });
     });
   }
-})();
+};
+(window.nuveGLReady || Promise.resolve()).then(nuveMain);

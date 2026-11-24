@@ -408,3 +408,9 @@ section { position: relative; }
   .card { position: relative; top: 0; }
   .app-step { opacity: 1; }
 }
+
+/* ---------- HTML-in-Canvas katmanı (kemer-gl.js, yalnız destekleyen tarayıcıda) ---------- */
+.gl-host { display: block; width: 100%; position: relative; }
+.gl-murekkep { z-index: 3; }
+.gl .manifesto ::selection { background: var(--murekkep); color: var(--turunc); }
+.gl .contact ::selection { background: var(--murekkep); color: var(--turunc); }
